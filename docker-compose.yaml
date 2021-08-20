@@ -1,0 +1,12 @@
+#old version
+mosquitto:
+    container_name: mosquitto
+    image: eclipse-mosquitto:1.6.14
+    restart: always
+    volumes: 
+      - /home/shan/Docker_stuff/mosquitto_docker/data:/mosquitto/data
+      - /home/shan/Docker_stuff/mosquitto_docker/log:/mosquitto/log
+      - /home/shan/Docker_stuff/mosquitto_docker/config:/mosquitto/config
+    ports:
+      - 11883:1883
+      - 19001:9001
