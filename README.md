@@ -1,2 +1,4 @@
 # mosquitto_docker_compose
-mosquitto docker compose file 
+
+  sudo docker-compose up -d
+
